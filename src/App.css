@@ -1,28 +1,57 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 216px 540px 324px 1fr;
+  grid-template-rows: 106px 1fr;
+  grid-template-areas:
+    "header header header header header"
+    "left-gap topics content subscribe right-gap";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#headerContainer {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 216px 540px 324px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left-gap logo search right-gap right-gap";
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#logoContainer {
+  grid-area: logo;
+  align-self: center;
+  justify-self: left;
+  padding: 32px;
 }
 
-.App-title {
-  font-size: 1.5em;
+#searchContainer {
+  grid-area: search;
+  justify-self: center;
+  align-self: center;
 }
 
-.App-intro {
-  font-size: large;
+#searchContainer input {
+  width: 480px;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 26px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#topicsContainer {
+  grid-area: topics;
+  padding-left: 32px;
+}
+
+#topicsContainer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#contentContainer {
+  grid-area: content;
+  padding-left: 32px;
+}
+
+#subscribeContainer {
+  grid-area: subscribe;
+  padding-left: 32px;
 }
