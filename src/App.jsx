@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import Header from "./components/Header";
-import Topics from "./components/Topics";
+import TopicList from "./components/TopicList";
 import Content from "./components/Content";
 import Subscribe from "./components/Subscribe";
 import "./App.css";
@@ -9,7 +9,7 @@ import "./App.css";
 const App = () => (
     <div className="App">
         <Header />
-        <Topics />
+        <TopicList />
         <Content />
         <Subscribe />
     </div>

@@ -55,3 +55,19 @@
   grid-area: subscribe;
   padding-left: 32px;
 }
+
+.thumb {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-image: url(./icons-001@2x.png);
+  background-size: 627px 16px;
+  margin-right: 8px;
+}
+
+.topicName {
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+}
