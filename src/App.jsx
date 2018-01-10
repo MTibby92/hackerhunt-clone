@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from "react-router-dom";
 import logo from "./logo.svg";
 import Header from "./components/Header";
 import TopicList from "./components/TopicList";
@@ -7,12 +12,14 @@ import Subscribe from "./components/Subscribe";
 import "./App.css";
 
 const App = () => (
-    <div className="App">
-        <Header />
-        <TopicList />
-        <Content />
-        <Subscribe />
-    </div>
+    <Router>
+        <div className="App">
+            <Header />
+            <TopicList />
+            <Content />
+            <Subscribe />
+        </div>
+    </Router>
 );
 
 export default App;
